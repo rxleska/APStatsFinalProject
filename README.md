@@ -6,16 +6,21 @@
 
 A program that creates a list of movie data in the format of TITLE\~Rating\~Runtime
 
-Using the, **_the movie database_ API** [TMDB](https://www.themoviedb.org/) ![LOGO](https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg)
-See [**Example Config**](example_config.py) for how to set up the program
+Using the, **_the movie database_ API** 
 
+[TMDB](https://www.themoviedb.org/) ![LOGO](https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg)
+
+See [**Example Config**](example_config.py) for how to set up the program
 **_Note:_** duplicates can exist in this data so keep that in mind in any usage
 
+
 This data was then imported into google sheets, after duplicate values were removed, We were left with >10000 entries
+
 
 ### [**googleSheetsFunctions.js**](googleSheetsFunctions.js)
 
 Contains the function GetNumInRange() that is used to create a matrix of the observed num of movies with in ranges based on runtime and rating.
+
 
 ### The Test Results
 
