@@ -4,7 +4,7 @@
 
 ### [**tmdbTest.py**](tmdbTest.py)
 
-A program that creates a list of movie data in the format of TITLE\~Rating\~Runtime
+A program that creates a list of movie data in the format of TITLE\~Rating\~Runtime\n
 Using the, **_the movie database_ API** [TMDB](https://www.themoviedb.org/) ![LOGO](https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg)
 See [**Example Config**](example_config.py) for how to set up the program
 
@@ -12,11 +12,11 @@ See [**Example Config**](example_config.py) for how to set up the program
 
 This data was then imported into google sheets, after duplicate values were removed, We were left with >10000 entries
 
-#### [**googleSheetsFunctions.js**](googleSheetsFunctions.js)
+### [**googleSheetsFunctions.js**](googleSheetsFunctions.js)
 
 Contains the function GetNumInRange() that is used to create a matrix of the observed num of movies with in ranges based on runtime and rating.
 
-##### The Test Results
+### The Test Results
 
 Using _10055_ datapoints, A Chi<sup>2</sup> Test of independence was ran on the data in intervals of 15 minutes of runtime and 0.5 rating points. (2-9.5) (30-175 ( last range was [175,600) ))
 H0 = the 2 parameters are independent, Ha = the 2 parameters are dependent
